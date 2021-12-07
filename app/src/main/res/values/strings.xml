@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hilt Handling</string>
+    <string name="total_cases"><b>Total Cases:</b> %1$s</string>
+    <string name="loading">Loading…</string>
+</resources>

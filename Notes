@@ -1,0 +1,25 @@
+
+// Classes Supported by hilt are
+> Application (by using @HiltAndroidApp)
+> ViewModel (by using @HiltViewModel)
+> Activity
+> Fragment
+> View
+> Service
+> BroadcastReceiver
+
+//
+Sometimes a type cannot be constructor-injected. This can
+happen for multiple reasons. For example, you cannot
+constructor-inject an interface. You also cannot constructor-inject
+a type that you do not own, such as a class from an external library.
+In these cases, you can provide Hilt with binding information by
+using Hilt modules.
+
+A Hilt module is a class that is annotated with @Module.
+Like a Dagger module, it informs Hilt how to provide instances
+of certain types. Unlike Dagger modules, you must annotate Hilt
+modules with @InstallIn to tell Hilt which Android class each
+module will be used or installed in.
+
+
